@@ -1,36 +1,16 @@
 void main() {
 
-var age=18;
+int i;
+for(i=0;i<10;i++){
+  print(i);
+}
 
-//If-else
-if(age>=20){
-  print('Adult');
-  }else if(age>12 && age<20){
-  print("Teen");
-  }else{
-  print("Child");
+while(i!=0){
+  print(i);
+  i--;
+  if(i==5){
+    break;
   }
-
-//Conditional Expression
-  int x=20,y=10;
-print(x>y?x:y);
-  // expr1??expr2
-  String name=null;
-  String name1="Sourav";
-  print(name??"Guest User");
-  print(name1??"Guest User");
-
-  switch(x){
-    case 10:print(10);
-            break;
-    case 11:print(20);
-            break;
-    default:print("None of the above");
-  }
-
-
-
-
-
+}
 
 }

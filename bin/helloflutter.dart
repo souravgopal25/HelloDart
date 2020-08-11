@@ -35,5 +35,14 @@ void main() {
   print("$name = $x ");
 
 
+  //final & constant
+  final friend="peter";
+  const pi=3.14;
+  //const varaible is implicitly final but it is compile time constant
+  
+
+
+
+
 
 }

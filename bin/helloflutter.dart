@@ -1,17 +1,22 @@
 void main() {
+  //Performing Exception Handling
+  int result=12~/4;
+  print("The Result is $result");
+try {
+  result = result ~/ 0;
+  print(result);
+} on IntegerDivisionByZeroException{
+  print("Cannot Divide by Zero");
+}
 
-print("Area is  :${findArea(10, 20)}");
-print("Perimeter is:${findPerimeter(10, 20)}");
-sqr(20);
-print(findVolume(2,height: 10,breadth: 5));
+
+  print("CASE II");
+try{
+  int x=2~/0;
+  print(x);
+}catch(e,s){
+  print("The Exception is $e");
+  print("SLACK TRACE \n $s");
 }
-void sqr(int x) => print(x*x);
-double findArea(double length,double breadth){
-  return length*breadth;
-}
-double findPerimeter(double l,double b){
-  return 2*(l+b);
-}
-int findVolume(int length,{int breadth,int height}){
-  return length*breadth*height;
+
 }

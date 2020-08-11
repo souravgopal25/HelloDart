@@ -1,22 +1,23 @@
 void main() {
-  //Performing Exception Handling
-  int result=12~/4;
-  print("The Result is $result");
+  //Custom Exception Handling
+
+
 try {
-  result = result ~/ 0;
-  print(result);
-} on IntegerDivisionByZeroException{
-  print("Cannot Divide by Zero");
+  depositMoney(-100);
+}catch(e){
+  print(e.errorMessage());
 }
 
-
-  print("CASE II");
-try{
-  int x=2~/0;
-  print(x);
-}catch(e,s){
-  print("The Exception is $e");
-  print("SLACK TRACE \n $s");
 }
 
+class DepsoitException implements Exception{
+  String errorMessage(){
+    return "You can't enter amt less than 0";
+  }
+}
+
+void depositMoney(int amt){
+  if (amt<0){
+    throw new DepsoitException();
+  }
 }

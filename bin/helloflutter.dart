@@ -1,23 +1,12 @@
+import 'model.dart';
+
 void main() {
-  //Custom Exception Handling
+
+ Student student=new Student();
+ student.id=20;
+ student.name="Sourav";
+ print("DETAIL OF STUDENT IS \n ${student.id} \n ${student.name} ");
 
 
-try {
-  depositMoney(-100);
-}catch(e){
-  print(e.errorMessage());
-}
 
-}
-
-class DepsoitException implements Exception{
-  String errorMessage(){
-    return "You can't enter amt less than 0";
-  }
-}
-
-void depositMoney(int amt){
-  if (amt<0){
-    throw new DepsoitException();
-  }
 }

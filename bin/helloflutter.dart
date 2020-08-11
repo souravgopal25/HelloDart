@@ -1,45 +1,33 @@
 void main() {
-  print('Hello, Dart!');
-  //declaring a variable
-  //DATA type
-  /*
-  Data type
-    * Numbers
-        =>int
-        =>double
-    * strings
-    *Boolean
-    *lists
-    *runes
-    *symbols
-   */
-  int age=10;
-  double age1=6.5;
-  var x=2.5;
-  var y=90;
-  bool isTrue=true;
-  String name="Sourav";
-  var name1="sourav";
 
+var age=18;
 
-  print(age);
-  print(age1);
-  print(x+y);
+//If-else
+if(age>=20){
+  print('Adult');
+  }else if(age>12 && age<20){
+  print("Teen");
+  }else{
+  print("Child");
+  }
 
+//Conditional Expression
+  int x=20,y=10;
+print(x>y?x:y);
+  // expr1??expr2
+  String name=null;
+  String name1="Sourav";
+  print(name??"Guest User");
+  print(name1??"Guest User");
 
-  //STRING INTERPOLATION
-  //Use of $ instead of +
-  String s1="It's Easy";
-  print("My name is $name1");
-  print("Value of x=$x");
-  print("$name = $x ");
+  switch(x){
+    case 10:print(10);
+            break;
+    case 11:print(20);
+            break;
+    default:print("None of the above");
+  }
 
-
-  //final & constant
-  final friend="peter";
-  const pi=3.14;
-  //const varaible is implicitly final but it is compile time constant
-  
 
 
 

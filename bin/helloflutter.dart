@@ -28,5 +28,11 @@ void main() {
 
   }
 
+  //in java we used for each loop
+   // in dart we use this8
+  for(Student student in mlist){
+    print(student.name);
+  }
+
 
 }
